@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Music</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <img src="../images/musicBackground.jpg" alt="Hold Up Still Image" class="musicBackground">
+    <header>
+       <h1><a class="logo" href="../index.html">Music</a></h1>
+    </header>
+    <div id="navBackground" class= "navActive"></div>
+    <nav id="menuBar">
+        <a class="toggleMenu active" onclick="slideNav()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+        <ul class="navList">
+            <li class="navTab"><a href="about.html" class=" navItem about">About</a></li>
+            <li class="navTab"><a href="music.html" class="navItem music">Music</a></li>
+            <li class="navTab"><a href="tours.html" class="navItem tours">Tours</a></li>
+            <li class="navTab"><a href="beygood.html" class="navItem beygood">#BeyGood</a></li>
+            <li class="navTab"><a href="ivypark.html" class="navItem ivyPark">Ivy Park</a></li>
+            <li class="navTab"><a href="join.html" class="navItem join">Join the Hive</a></li>
+        </ul>
+    </nav>
+    <main class="mainMusic">
+        <div class="musicContainer container1">
+            <h2 class="albumTitle everythingTitle">EVERYTHING IS LOVE</h2>
+            <div class="albumContainer">
+                <img class="albumCover everythingCover" id= "cover1" src="../images/isLove.jpg" alt="Everything is Love album photo" onclick="slideMusic(1)">   
+                <img src="../images/cover1back.jpeg" alt="Everything is Love album photo" class="coverBack" id="music1">
+                <div class="spotify" id="music2">
+                        <iframe src="https://open.spotify.com/embed/album/1x7IPmap6ALHrqcyWGnFT2" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+            </div> 
+        </div>
+        <div class="musicContainer">
+            <h2 class=" albumTitle lemonadeTitle">LEMONADE</h2>
+            <div class="albumContainer">
+                <img class="albumCover lemonadeCover" src="../images/lemonade.jpg" alt="Lemonade album photo" onclick="slideMusic(3)">   
+                <ul class="songList" id="music4">
+                    <li>PRAY YOU CATCH ME</li>
+                    <li>HOLD UP</li>
+                    <li>DON'T HURT YOURSELF (FEAT. JACK WHITE)</li>
+                    <li>SORRY</li>
+                    <li>6 INCH (FEAT. THE WEEKND)</li>
+                    <li>LOVE DROUGHT</li>
+                    <li>SANDCASTLES</li>
+                    <li>FORWARD (FEAT. JAMES BLAKE)</li>
+                    <li>FREEDOM (FEAT. KENDRICK LAMAR)</li>
+                    <li>ALL NIGHT</li>
+                    <li>FORMATION</li>
+                    <li>LEMONADE</li>
+                </ul>
+                <img src="../images/backcover3.png" alt="Lemonade album photo" class="coverBack" id="music3">
+            </div> 
+        </div>
+        <div class="musicContainer">
+            <h2 class=" albumTitle beyonceTitle">BEYONCE</h2>
+            <div class="albumContainer">
+                <img class="albumCover beyonceCover" src="../images/BEYONCE.jpg" alt="Beyonce album photo" onclick="slideMusic(5)">   
+                <img src="../images/backCover2.png" alt="Beyonce album photo" class="coverBack" id="music5">
+                <div class="spotify" id="music6">
+                        <iframe src="https://open.spotify.com/embed/album/2UJwKSBUz6rtW4QLK74kQu" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+            </div> 
+        </div>
+        <div class="musicContainer">
+            <h2 class=" albumTitle fourTitle">4</h2>
+            <div class="albumContainer">
+                <img class="albumCover fourCover" src="../images/four.jpg" alt="Four album photo" onclick="slideMusic(7)">    
+                <img src="../images/backcover4.png" alt="Four album photo" class="coverBack" id="music7">
+                <div class="spotify" id="music8">
+                        <iframe src="https://open.spotify.com/embed/album/1gIC63gC3B7o7FfpPACZQJ" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="musicContainer">
+            <h2 class=" albumTitle sashaTitle">I AM... SASHA FIERCE</h2>
+            <div class="albumContainer">
+                <img class="albumCover sashaCover" src="../images/sasha.jpg" alt="Sasha Fierce album photo" onclick="slideMusic(9)">   
+                <img src="../images/coverback5.png" alt="Sasha Fierce album photo" class="coverBack" id="music9">
+                <div class="spotify" id="music10">
+                        <iframe src="https://open.spotify.com/embed/album/23Y5wdyP5byMFktZf8AcWU" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+            </div> 
+        </div>
+        <div class="musicContainer">
+            <h2 class=" albumTitle bdayTitle">B'DAY</h2>
+            <div class="albumContainer">
+                <img class="albumCover bdayCover" src="../images/bday.jpg" alt="BDay album photo" onclick="slideMusic(11)">    
+                <img src="../images/backcover6.png" alt="BDay album photo" class="coverBack" id="music11">
+                <div class="spotify" id="music12">
+                        <iframe src="https://open.spotify.com/embed/album/0Zd10MKN5j9KwUST0TdBBB" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="musicContainer">
+            <h2 class=" albumTitle dangerousTitle">DANGEROUSLY IN LOVE</h2>
+            <div class="albumContainer">
+                <img class="albumCover dangerousCover" src="../images/danger.jpg" alt="Dangerously in Love album photo" onclick="slideMusic(13)">    
+                <img src="../images/coverback7.png" alt="Dangerously in Love album photo" class="coverBack" id="music13">
+                <div class="spotify" id="music14">
+                        <iframe src="https://open.spotify.com/embed/album/6oxVabMIqCMJRYN1GqR3Vf" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+            </div> 
+        </div>
+    </main>
+    <script src="../js/main.js"></script>
+</body>
+</html>

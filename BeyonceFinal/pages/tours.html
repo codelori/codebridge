@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tours</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <img src="../images/tourBack.png" alt="Formation Tour Background" class="tourBack">
+    <header>
+         <h1><a class="logo" href="../index.html">Tours</a></h1>
+    </header>
+        <div id="navBackground" class= "navActive"></div> 
+        <nav id="menuBar">
+            <a class="toggleMenu active" onclick="slideNav()">
+                <span></span>
+                <span></span>
+                <span></span>
+    
+            </a>
+            <ul class="navList">
+                <li class="navTab"><a href="about.html" class=" navItem about">About</a></li>
+                <li class="navTab"><a href="music.html" class="navItem music">Music</a></li>
+                <li class="navTab"><a href="tours.html" class="navItem tours">Tours</a></li>
+                <li class="navTab"><a href="beygood.html" class="navItem beygood">#BeyGood</a></li>
+                <li class="navTab"><a href="ivypark.html" class="navItem ivyPark">Ivy Park</a></li>
+                <li class="navTab"><a href="join.html" class="navItem join">Join the Hive</a></li>
+            </ul>
+        </nav>
+    <main class="toursMain">
+        <div class="otrII">
+            <h2 onclick="openModal(10)" class="tourName">OTR II</h2>
+            <img src="../images/otrII1.png" alt="On the Run 2 Tour" class="tourPics turn1" id="move1">
+            <img src="../images/otrII2.png" alt="On the Run 2 Tou" class="tourPics turn2" id="move2">
+            <img src="../images/otrII3.png" alt="On the Run 2 Tou" class="tourPics turn3" id="move3">
+            <img src="../images/otrII4.png" alt="On the Run 2 Tou" class="tourPics turn4" id="move4">
+            <img src="../images/otrII5.png" alt="On the Run 2 Tou" class="tourPics pic5" onclick="move(1)">
+        </div>
+        <div class="formation">
+            <h2 onclick="openModal(11)"class="tourName">FORMATION</h2>
+            <img src="../images/formation1.png" alt="Formation Tour" class="tourPics turn1" id="move5">
+            <img src="../images/formation2.png" alt="Formation Tour" class="tourPics turn2" id="move6">
+            <img src="../images/formation3.png" alt="Formation Tour" class="tourPics turn3" id="move7">
+            <img src="../images/formation4.png" alt="Formation Tour" class="tourPics turn4" id="move8">
+            <img src="../images/formation5.png" alt="Formation Tour" class="tourPics pic5" onclick="move(5)">
+        </div>
+        <div class="otr">
+            <h2 onclick="openModal(12)"class="tourName">OTR</h2>
+            <img src="../images/otr1.png" alt="On the Run Tour" class="tourPics turn1" id="move9">
+            <img src="../images/otr2.png" alt="On the Run Tour" class="tourPics turn2" id="move10">
+            <img src="../images/otr3.png" alt="On the Run Tour" class="tourPics turn3" id="move11">
+            <img src="../images/otr4.png" alt="On the Run Tour" class="tourPics turn4" id="move12">
+            <img src="../images/otr5.png" alt="On the Run Tour" class="tourPics pic5" onclick="move(9)">
+        </div>
+        <div class="mrsCarter">
+            <h2 onclick="openModal(13)"class="tourName">Mrs. Carter</h2>
+            <img src="../images/mrscarter1.png" alt="Mrs. Carter Tour" class="tourPics turn1" id="move13">
+            <img src="../images/mrscarter2.png" alt="Mrs. Carter Tour" class="tourPics turn2" id="move14">
+            <img src="../images/mrscarter3.png" alt="Mrs. Carter Tour" class="tourPics turn3" id="move15">
+            <img src="../images/mrscarter4.png" alt="Mrs. Carter Tour" class="tourPics turn4" id="move16">
+            <img src="../images/mrscarter5.png" alt="Mrs. Carter Tour" class="tourPics pic5" onclick="move(13)">
+        </div>
+    </main>
+    <div class="modalBack" id="modalBack10">
+            <div class="modalContent">
+                <h2 class="tourDates">TOUR DATES</h2>
+                <img src="../images/otr2date.png" alt="Tour Dates" class="modalPic tourModal">
+                <button onclick="closeBtn(10)" class="closeBtn">x</button> 
+            </div>
+    </div>
+    <div class="modalBack" id="modalBack11">
+            <div class="modalContent">
+                <h2 class="tourDates">TOUR DATES</h2>
+                <img src="../images/formationdate.png" alt="Tour Dates" class="modalPic tourModal">
+                <button onclick="closeBtn(11)" class="closeBtn">x</button> 
+            </div>
+    </div>
+    <div class="modalBack" id="modalBack12">
+            <div class="modalContent">
+                <h2 class="tourDates">TOUR DATES</h2>
+                <img src="../images/otrdate.png" alt="Tour Dates" class="modalPic tourModal">
+                <button onclick="closeBtn(12)" class="closeBtn">x</button> 
+            </div>
+    </div>
+    <div class="modalBack" id="modalBack13">
+            <div class="modalContent">
+                <h2 class="tourDates">TOUR DATES</h2>
+                <img src="../images/carterdate.png" alt="Tour Dates" class="modalPic tourModal">
+                <button onclick="closeBtn(13)" class="closeBtn">x</button> 
+            </div>
+    </div>
+ <script src="../js/main.js"></script>
+</body>
+</html>

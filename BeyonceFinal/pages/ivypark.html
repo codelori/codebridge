@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ivy Park</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <!-- <img src="../images/aboutBackground.jpeg" alt="" class="aboutBack"> -->
+    <header>
+            <h1><a class="logo" href="../index.html">Ivy Park</a></h1>  
+    </header>
+     <div id="navBackground" class= "navActive"></div>
+        <nav id="menuBar">
+            <a class="toggleMenu active" onclick="slideNav()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <ul class="navList">
+                <li class="navTab"><a href="about.html" class=" navItem about">About</a></li>
+                <li class="navTab"><a href="music.html" class="navItem music">Music</a></li>
+                <li class="navTab"><a href="tours.html" class="navItem tours">Tours</a></li>
+                <li class="navTab"><a href="beygood.html" class="navItem beygood">#BeyGood</a></li>
+                <li class="navTab"><a href="ivypark.html" class="navItem ivyPark">Ivy Park</a></li>
+                <li class="navTab"><a href="join.html" class="navItem join">Join the Hive</a></li>
+            </ul>
+        </nav>
+        <div class="catalog">
+            <div class="clotheContainer">
+                <div class="imgContainer">
+                    <img src="../images/ivyPark1A.png" alt="Ivy Park Stitch Logo Sweatshirt" class="clothe1">
+                    <img src="../images/ivyPark1B.png" alt="Ivy Park Stitch Logo Sweatshirt" class="clothe2">
+                </div>
+                    <h3 class="clotheName">Ivy Park Stitch Logo Sweatshirt</h3>
+                    <h4 class="clothePrice">$65.00</h4>
+                    <button onclick="openModal(1)" class="buyMe">BUY ME</button>
+            </div>
+            <div class="clotheContainer">
+                <div class="imgContainer">
+                    <img src="../images/ivyPark2A.png" alt="Ivy Park Craft Lace-Up Jogger Pants" class="clothe1">
+                    <img src="../images/ivyPark2B.png" alt="Ivy Park Craft Lace-Up Jogger Pants" class="clothe2">
+                </div>
+                    <h3 class="clotheName">Ivy Park Craft Lace-Up Jogger Pants</h3>
+                    <h4 class="clothePrice">$100.00</h4>
+                    <button onclick="openModal(2)" class="buyMe">BUY ME</button>
+            </div>
+            <div class="clotheContainer">
+                <div class="imgContainer">
+                    <img src="../images/ivyPark3A.png" alt="Ivy Park Active Logo Elastic Leggings" class="clothe1">
+                    <img src="../images/ivyPark3B.png" alt="Ivy Park Active Logo Elastic Leggings" class="clothe2">
+                </div>
+                    <h3 class="clotheName">Ivy Park Active Logo Elastic Leggings</h3>
+                    <h4 class="clothePrice">$75.00</h4>
+                    <button onclick="openModal(3)" class="buyMe">BUY ME</button>
+            </div>
+            <div class="clotheContainer">
+                <div class="imgContainer">
+                    <img src="../images/ivyPark4A.png" alt="Ivy Park Flocked Active Logo Bra" class="clothe1">
+                    <img src="../images/ivyPark4B.png" alt="Ivy Park Flocked Active Logo Bra" class="clothe2">
+                </div>
+                    <h3 class="clotheName">Ivy Park Flocked Active Logo Bra</h3>
+                    <h4 class="clothePrice">$45.00</h4>
+                    <button onclick="openModal(4)" class="buyMe">BUY ME</button>
+            </div>
+            <div class="clotheContainer">
+                <div class="imgContainer">
+                    <img src="../images/ivyPark5A.png" alt="Ivy Park Colorblock Cutaway Bra" class="clothe1">
+                    <img src="../images/ivyPark5B.png" alt="Ivy Park Colorblock Cutaway Bra" class="clothe2">
+                </div>
+                    <h3 class="clotheName">Ivy Park Colorblock Cutaway Bra</h3>
+                    <h4 class="clothePrice">$45.00</h4>
+                    <button onclick="openModal(5)" class="buyMe">BUY ME</button>
+            </div>
+            <div class="clotheContainer">
+                <div class="imgContainer">
+                    <img src="../images/ivyPark6A.png" alt="Ivy Park Seamless Knitted Bra" class="clothe1">
+                    <img src="../images/ivyPark6B.png" alt="Ivy Park Seamless Knitted Bra" class="clothe2">
+                </div>
+                    <h3 class="clotheName">Ivy Park Seamless Knitted Bra</h3>
+                    <h4 class="clothePrice">$40.00</h4>
+                    <button onclick="openModal(6)" class="buyMe">BUY ME</button>
+            </div>
+            <div class="clotheContainer">
+                <div class="imgContainer">
+                    <img src="../images/ivyPark7A.png" alt="Ivy Park Lace-Up Mesh Insert Bra" class="clothe1">
+                    <img src="../images/ivyPark7B.png" alt="Ivy Park Lace-Up Mesh Insert Bra" class="clothe2">
+                </div>
+                    <h3 class="clotheName">Ivy Park Lace-Up Mesh Insert Bra</h3>
+                    <h4 class="clothePrice">$100.00</h4>
+                    <button onclick="openModal(7)" class="buyMe">BUY ME</button>
+            </div>
+            <div class="clotheContainer">
+                <div class="imgContainer">
+                    <img src="../images/ivyPark8A.png" alt="Ivy Park Loungewear Sweater" class="clothe1">
+                    <img src="../images/ivyPark8B.png" alt="Ivy Park Loungewear Sweater" class="clothe2">
+                </div>
+                    <h3 class="clotheName">Ivy Park Loungewear Sweater</h3>
+                    <h4 class="clothePrice">$65.00</h4>
+                    <button onclick="openModal(8)" class="buyMe">BUY ME</button>
+            </div>
+        </div>
+        <!------------------------- Modal Stuf ------------------->
+        <div class="modalBack" id="modalBack1">
+            <div class="modalContent">
+                <img src="../images/ivyPark1A.png" alt="Ivy Park Stitch Logo Sweatshirt" class="modalPic">
+                <div class="modalInfo">
+                    <h2 class="modalTitle info">Ivy Park Stitch Logo Sweatshirt</h2>
+                    <h4 class="modalPrice info">$65.00</h4>
+                    <h5 class="itemColor">TEAL</h5>
+                    <select class="info">
+                            <option>Select Size</option>
+                            <option>Small</option>
+                            <option>Medium</option>
+                            <option>Large</option>
+                    </select>
+                    <h5 class="itemDetails info">Details</h5>
+                    <p class="detailInfo info">Add an extra layer to your workout routine with the Stitch 
+                        Logo Sweatshirt from Ivy Park. This pullover features a 
+                        crew neckline, long sleeves, contrast stitching, and a 
+                        cropped fit.</p>
+                    <button class="addBag info" onclick="purchase()">PURCHASE</button>
+                </div>
+                <button onclick="closeBtn(1)"class="closeBtn">x</button>
+            </div>
+        </div>
+        <div class="modalBack" id="modalBack2">
+            <div class="modalContent">
+                <img src="../images/ivyPark2A.png" alt="Ivy Park Craft Lace-Up Jogger Pants" class="modalPic">
+                <div class="modalInfo">
+                    <h2 class="modalTitle info">Ivy Park Craft Lace-Up Jogger Pants</h2>
+                    <h4 class="modalPrice info">$100.00</h4>
+                    <h5 class="itemColor">RED</h5>
+                    <select class="info">
+                            <option>Select Size</option>
+                            <option>Small</option>
+                            <option>Medium</option>
+                            <option>Large</option>
+                    </select>
+                    <h5 class="itemDetails info">Details</h5>
+                    <p class="detailInfo info">Add a little edge to your casual style with the Craft 
+                        Lace-Up Jogger Pants from Ivy Park. These comfy joggers feature a high-rise 
+                        fit, side pockets, lace-up front closure, lace-up detailing, and ribbed cuffs.</p>
+                    <button class="addBag info" onclick="purchase()">PURCHASE</button>
+                </div>
+                <button onclick="closeBtn(2)"class="closeBtn">x</button>
+            </div>
+        </div>
+        <div class="modalBack" id="modalBack3">
+            <div class="modalContent">
+                <img src="../images/ivyPark3A.png" alt="Ivy Park Active Logo Elastic Leggings" class="modalPic">
+                <div class="modalInfo">
+                    <h2 class="modalTitle info">Ivy Park Active Logo Elastic Leggings</h2>
+                    <h4 class="modalPrice info">$75.00</h4>
+                    <h5 class="itemColor">GREEN</h5>
+                    <select class="info">
+                            <option>Select Size</option>
+                            <option>Small</option>
+                            <option>Medium</option>
+                            <option>Large</option>
+                    </select>
+                    <h5 class="itemDetails info">Details</h5>
+                    <p class="detailInfo info">Ivy Park deliver the Active Logo Elastic 
+                        Leggings to create the perfect gym-ready look. These high-rise 
+                        leggings feature logo taped sides, elastic waistband, and a 
+                        tight fit.</p>
+                    <button class="addBag info" onclick="purchase()">PURCHASE</button>
+                </div>
+                <button onclick="closeBtn(3)"class="closeBtn">x</button>
+            </div>
+        </div>
+        <div class="modalBack" id="modalBack4">
+            <div class="modalContent">
+                <img src="../images/ivyPark4A.png" alt="Ivy Park Flocked Active Logo Bra" class="modalPic">
+                <div class="modalInfo">
+                    <h2 class="modalTitle info">Ivy Park Flocked Active Logo Bra</h2>
+                    <h4 class="modalPrice info">$45.00</h4>
+                    <h5 class="itemColor">DARK GRAY</h5>
+                    <select class="info">
+                            <option>Select Size</option>
+                            <option>Small</option>
+                            <option>Medium</option>
+                            <option>Large</option>
+                    </select>
+                    <h5 class="itemDetails info">Details</h5>
+                    <p class="detailInfo info">Stay active in the versatile sports bra 
+                        by Ivy Park. It has a black logo at the front with mesh paneling, 
+                        racerback silhouette, and elastic band.</p>
+                    <button class="addBag info" onclick="purchase()">PURCHASE</button>
+                </div>
+                <button onclick="closeBtn(4)"class="closeBtn">x</button>
+            </div>
+        </div>
+        <div class="modalBack" id="modalBack5">
+            <div class="modalContent">
+                <img src="../images/ivyPark5A.png" alt="Ivy Park Colorblock Cutaway Bra" class="modalPic">
+                <div class="modalInfo">
+                    <h2 class="modalTitle info">Ivy Park Colorblock Cutaway Bra</h2>
+                    <h4 class="modalPrice info">$45.00</h4>
+                    <h5 class="itemColor">TEAL</h5>
+                    <select class="info">
+                            <option>Select Size</option>
+                            <option>Small</option>
+                            <option>Medium</option>
+                            <option>Large</option>
+                    </select>
+                    <h5 class="itemDetails info">Details</h5>
+                    <p class="detailInfo info">Hit the gym in style with the ultra-cute 
+                        and comfy Colorblock Cutaway Bra by Ivy Park. This sports bra 
+                        features a scoop neckline with contrast binding, logo tag at 
+                        the front, mesh panel sides, racerback silhouette, and an elastic 
+                        band with back cutout details.</p>
+                    <button class="addBag info" onclick="purchase()">PURCHASE</button>
+                </div>
+                <button onclick="closeBtn(5)"class="closeBtn">x</button>
+            </div>
+        </div>
+        <div class="modalBack" id="modalBack6">
+            <div class="modalContent">
+                <img src="../images/ivyPark6A.png" alt="Ivy Park Seamless Knitted Bra" class="modalPic">
+                <div class="modalInfo">
+                    <h2 class="modalTitle info">Ivy Park Seamless Knitted Bra</h2>
+                    <h4 class="modalPrice info">$40.00</h4>
+                    <h5 class="itemColor">BLUE</h5>
+                    <select class="info">
+                            <option>Select Size</option>
+                            <option>Small</option>
+                            <option>Medium</option>
+                            <option>Large</option>
+                    </select>
+                    <h5 class="itemDetails info">Details</h5>
+                    <p class="detailInfo info">This seamless knitted bra is designed for 
+                        low-impact workouts. It features adjustable straps, scoop neckline, 
+                        racerback silhouette, and logo band.</p>
+                    <button class="addBag info" onclick="purchase()">PURCHASE</button>
+                </div>
+                <button onclick="closeBtn(6)"class="closeBtn">x</button>
+            </div>
+        </div>
+        <div class="modalBack" id="modalBack7">
+            <div class="modalContent">
+                <img src="../images/ivyPark7A.png" alt="Ivy Park Lace-Up Mesh Insert Bra" class="modalPic">
+                <div class="modalInfo">
+                    <h2 class="modalTitle info">Ivy Park Lace-Up Mesh Insert Bra</h2>
+                    <h4 class="modalPrice info">$100.00</h4>
+                    <h5 class="itemColor">OLIVE</h5>
+                    <select class="info">
+                            <option>Select Size</option>
+                            <option>Small</option>
+                            <option>Medium</option>
+                            <option>Large</option>
+                    </select>
+                    <h5 class="itemDetails info">Details</h5>
+                    <p class="detailInfo info">Hit the gym in style with the Lace-Up Mesh 
+                        Insert Bra from Ivy Park. This sports bra is complete with a scoop 
+                        neckline, mixed mesh fabric with lace-up detailing, racerback 
+                        silhouette, and elastic band for a comfortable fit.</p>
+                    <button class="addBag info" onclick="purchase()" >PURCHASE</button>
+                </div>
+                <button onclick="closeBtn(7)"class="closeBtn">x</button>
+            </div>
+        </div>
+        <div class="modalBack" id="modalBack8">
+            <div class="modalContent">
+                <img src="../images/ivyPark8A.png" alt="Ivy Park Loungewear Sweater" class="modalPic">
+                <div class="modalInfo">
+                    <h2 class="modalTitle info">Ivy Park Loungewear Sweater</h2>
+                    <h4 class="modalPrice info">$65.00</h4>
+                    <h5 class="itemColor">SAND</h5>
+                    <select class="info">
+                            <option>Select Size</option>
+                            <option>Small</option>
+                            <option>Medium</option>
+                            <option>Large</option>
+                    </select>
+                    <h5 class="itemDetails info">Details</h5>
+                    <p class="detailInfo info">Reach for the Loungewear Sweater from 
+                        Ivy Park on cold nights for an instant warm up. This super 
+                        soft sweater features long sleeves, crew neckline, mixed 
+                        ribbed fabric, and a cropped fit.</button>
+                    <button class="addBag info" onclick="purchase()">PURCHASE</button>
+                </div>
+                <button onclick="closeBtn(8)" class="closeBtn">x</button> 
+            </div>
+        </div>
+ <script src="../js/main.js"></script>
+</body>
+</html>

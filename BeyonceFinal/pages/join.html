@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bey Hive</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <img src="../images/joinHive.png" alt="" class="musicBackground">
+    <header>
+            <h1><a class="logo" href="../index.html">The Hive</a></h1>
+    </header>
+        <div id="navBackground" class= "navActive"></div>
+        <nav id="menuBar">
+            <a class="toggleMenu active" onclick="slideNav()">
+                <span></span>
+                <span></span>
+                <span></span>
+    
+            </a>
+            <ul class="navList">
+                <li class="navTab"><a href="about.html" class=" navItem about">About</a></li>
+                <li class="navTab"><a href="music.html" class="navItem music">Music</a></li>
+                <li class="navTab"><a href="tours.html" class="navItem tours">Tours</a></li>
+                <li class="navTab"><a href="beygood.html" class="navItem beygood">#BeyGood</a></li>
+                <li class="navTab"><a href="ivypark.html" class="navItem ivyPark">Ivy Park</a></li>
+                <li class="navTab"><a href="join.html" class="navItem join">Join the Hive</a></li>
+            </ul>
+        </nav>
+    <main class="joinForm">
+        <form action="">
+            <h2 class="formTitle">JOIN THE BEYHIVE TO GET ADVANCE ACCESS TO NEWS, SPECIAL EXPERIENCES, EXCLUSIVE MERCHANDISE, AND MORE</h2>
+            <div class="row1">
+                <div class="formItems">
+                    <label for="first">First Name</label>
+                    <input type="text" id="first" class="formInput">
+                </div>
+                <div class="formItems">
+                    <label for="last">Last Name</label> 
+                    <input type="text" id="last" class="formInput">
+                </div>
+            </div>
+            <div class="row1">
+                <div class="formItems">
+                    <label for="email">E-Mail</label>
+                    <input type="text"id="email" class="formInput">
+                </div>
+                <div class="formItems">
+                    <label for="number">Mobile Number</label>
+                    <input type="text" id="number" placeholder="xxx-xxx-xxxx" class="formInput">
+                </div>
+            </div>
+            <button class="formBtn" type="button" onclick="openModal(9)">SUBMIT</button>
+        </form>
+        <div class="modalBack" id="modalBack9">
+                <div class="modalContent" id="joinModal">
+                    <div class="modalInfo" id="joinModalInfo">
+                        <h2 class="modalTitle info" id="thanksJoin">Thanks for joining!</h2>
+                    </div>
+                    <button onclick="closeBtn(9)" class="closeBtn">x</button> 
+                </div>
+        </div>
+        
+    </main>
+ <script src="../js/main.js"></script>
+</body>
+</html>
